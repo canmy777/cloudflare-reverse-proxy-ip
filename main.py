@@ -135,7 +135,7 @@ def merge_ip_files():
         for line in ip_input:
           line = line.strip()
           if line:  # Skip empty lines
-            ip_port = f'{line}  {port}'
+            ip_port = f'{line} {port}'
             if ip_port not in unique_ips:
               unique_ips.add(ip_port)
               ip_output.write(f'{ip_port}\n')
